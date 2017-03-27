@@ -1,0 +1,49 @@
+<idea-plugin version="2">
+    <id>com.wso2.jetbrains.siddhi</id>
+    <name>Siddhi IDEA Plugin</name>
+    <version>0.1</version>
+    <vendor email="dulaj.r.atapattu@gmail.com" url="http://www.wso2.com">WSO2</vendor>
+
+    <description><![CDATA[
+      <p>IntelliJ IDEA SiddhiQL Plugin</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="145.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <project-components>
+        <component>
+            <implementation-class>com.wso2.jetbrains.siddhi.SiddhiPluginController</implementation-class>
+        </component>
+    </project-components>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="com.wso2.jetbrains.siddhi.SiddhiFileTypeFactory"/>
+        <lang.syntaxHighlighterFactory key="Siddhi"
+                                       implementationClass="com.wso2.jetbrains.siddhi.SiddhiSyntaxHighlighterFactory"/>
+
+        <lang.parserDefinition language="Siddhi" implementationClass="com.wso2.jetbrains.siddhi.SiddhiParserDefinition"/>
+        <lang.ast.factory language="Siddhi" implementationClass="com.wso2.jetbrains.siddhi.SiddhiASTFactory"/>
+
+        <lang.psiStructureViewFactory language="Siddhi"
+                                      implementationClass="com.wso2.jetbrains.siddhi.structview.SiddhiStructureViewFactory"/>
+
+        <colorSettingsPage implementation="com.wso2.jetbrains.siddhi.SiddhiColorSettingsPage"/>
+
+        <externalAnnotator language="Siddhi" implementationClass="com.wso2.jetbrains.siddhi.SiddhiExternalAnnotator"/>
+
+        <lang.findUsagesProvider language="Siddhi"
+                                 implementationClass="com.wso2.jetbrains.siddhi.SiddhiFindUsagesProvider"/>
+    </extensions>
+
+</idea-plugin>
