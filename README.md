@@ -1,7 +1,7 @@
 # idea-siddhi-plugin
 This repository contains the IntelliJ IDEA Siddhi plugin with syntax highlighting and auto code completion features. The project is done for a [GSOC 2017 project proposal of WSO2](https://docs.wso2.com/display/GSoC/Project+Proposals+for+2017#ProjectProposalsfor2017-Proposal4:IdeaPluginforSiddhi). 
 
-[![idea-siddhi-plugin-readme-1.png](https://s11.postimg.org/axjp299mb/idea-siddhi-plugin-readme-1.png)](https://postimg.org/image/4737stmgf/)
+![idea-siddhi-plugin-animated-demo.gif](https://www.dropbox.com/s/xba5iq728iv60y4/idea-siddhi-plugin-readme-gif.gif?dl=0)
 
 To deploy this plugin follow the instructions [here](http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/deploying_plugin.html).
 
